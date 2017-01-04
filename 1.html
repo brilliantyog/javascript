@@ -5,11 +5,11 @@
 
         function toggle() {
             if(document.getElementById('switch1').innerHTML == 'ON'){
-                document.getElementById('bulb').src('pic_bulbon.gif');
+                document.getElementById('bulb').src="pic_bulbon.gif";
                 document.getElementById('switch1').innerHTML = 'OFF';
             }
             else{
-                document.getElementById('bulb').src('pic_bulboff.gif');
+                document.getElementById('bulb').src="pic_bulboff.gif";
                 document.getElementById('switch1').innerHTML = 'ON';
             }
         }
@@ -21,6 +21,6 @@
 <body>
     <img src = "pic_bulboff.gif" id = "bulb"/>
 
-    <button id = "switch1" onclick="toggle()">ON</button>
+    <button id = "switch1" onclick="toggle();">ON</button>
 </body>
 </html>
