@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+
+        function toggle() {
+            if(document.getElementById('switch1').innerHTML == 'ON'){
+                document.getElementById('bulb').src('pic_bulbon.gif');
+                document.getElementById('switch1').innerHTML = 'OFF';
+            }
+            else{
+                document.getElementById('bulb').src('pic_bulboff.gif');
+                document.getElementById('switch1').innerHTML = 'ON';
+            }
+        }
+
+    </script>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Toggle Light Bulb</title>
 </head>
 <body>
+    <img src = 'pic_bulboff.gif' id = 'buld'/>
 
+    <button id = "switch1" onclick="toggle()">ON</button>
 </body>
 </html>
