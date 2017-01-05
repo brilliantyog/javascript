@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afd792b7-b5d6-40a1-b467-690a43172703" name="Default" comment="KunjalTandel : adding 6.html : contains object example.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/7.html" />
+    <list default="true" id="afd792b7-b5d6-40a1-b467-690a43172703" name="Default" comment="KunjalTandel : adding 7.html : contains file operation code.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/7.html" afterPath="$PROJECT_DIR$/7.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,8 +24,8 @@
       <file leaf-file-name="7.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/7.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+            <state relative-caret-position="390">
+              <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -66,8 +66,8 @@
         <option value="$PROJECT_DIR$/4.coffee" />
         <option value="$PROJECT_DIR$/4.html" />
         <option value="$PROJECT_DIR$/5.html" />
-        <option value="$PROJECT_DIR$/7.html" />
         <option value="$PROJECT_DIR$/6.html" />
+        <option value="$PROJECT_DIR$/7.html" />
       </list>
     </option>
   </component>
@@ -123,7 +123,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.6.html">
+  <component name="RunManager" selected="JavaScript Debug.7.html">
     <configuration default="false" name="3.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/javascript/3.html">
       <method />
     </configuration>
@@ -207,8 +207,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.6.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.7.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.7.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.6.html" />
         <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.5.html" />
         <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.4.html" />
         <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.3.html" />
@@ -227,7 +227,7 @@
       <updated>1483510053941</updated>
       <workItem from="1483510056604" duration="3684000" />
       <workItem from="1483517453155" duration="2075000" />
-      <workItem from="1483593169904" duration="12743000" />
+      <workItem from="1483593169904" duration="15087000" />
     </task>
     <task id="LOCAL-00001" summary="adding new html file 1.html">
       <created>1483510220864</created>
@@ -306,11 +306,18 @@
       <option name="project" value="LOCAL" />
       <updated>1483608862216</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="KunjalTandel : adding 7.html : contains file operation code.">
+      <created>1483614131554</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1483614131554</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18502000" />
+    <option name="totallyTimeSpent" value="20846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -352,7 +359,8 @@
     <MESSAGE value="KunjalTandel : adding 4.html : contains try catch exception handling." />
     <MESSAGE value="KunjalTandel : adding 5.html : contains custome exception handling." />
     <MESSAGE value="KunjalTandel : adding 6.html : contains object example." />
-    <option name="LAST_COMMIT_MESSAGE" value="KunjalTandel : adding 6.html : contains object example." />
+    <MESSAGE value="KunjalTandel : adding 7.html : contains file operation code." />
+    <option name="LAST_COMMIT_MESSAGE" value="KunjalTandel : adding 7.html : contains file operation code." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -455,8 +463,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/7.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        <state relative-caret-position="390">
+          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
           <folding />
         </state>
       </provider>
