@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Exception</title>
+    <script>
+        function check_username() {
+            var username = document.getElementById('username').value;
+            var pattern = /[a-z]|[0-9]/;
+            try{
+            if(pattern.test(username)==false){
+                throw "Enter valid username!";
+            }else {
+                throw "It is Valid username!:)";
+            }
+            }catch(err){
+                alert(err);
+            }
+        }
+    </script>
+</head>
+<body>
+<p style="font-family: 'calbri';font-size: 12pt; color: blue;">Usename:</p>
+<input id = "username" type="text" onchange="check_username();">
+</body>
+</html>
