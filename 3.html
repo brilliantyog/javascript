@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RegExp</title>
+
+    <script>
+        function check() {
+            var str = document.getElementById('text1').innerHTML;
+            var pattern = /ft |ftp/;
+            window.alert(pattern.test(str)+" "+str.search(pattern));
+            document.getElementById('text1').innerHTML = str.replace(/ftp|ft |\./g,"!");
+        }
+    </script>
+
+</head>
+<body>
+<p id="text1">Microsoft Windows.....ftp!</p>
+<button id = "btn1" onclick="check();">Replace</button>
+</body>
+</html>
