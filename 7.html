@@ -14,14 +14,19 @@
             var r = new FileReader();
             r.onload = function(e) {
                 var contents = e.target.result;
-                alert(contents);
+                /*var text = contents.replace(/</g,'&lt;');
+                var text1 = text.replace(/>/g,'&gt;');*/
+                document.write(contents);
             }
             r.readAsText(f);
+
         } else {
             alert("Failed to load file");
         }
     }
+
     document.getElementById('fileinput').addEventListener('change', readSingleFile, false);
-</script>
+   </script>
+
 </body>
 </html>
