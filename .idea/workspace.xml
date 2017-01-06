@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afd792b7-b5d6-40a1-b467-690a43172703" name="Default" comment="">
+    <list default="true" id="afd792b7-b5d6-40a1-b467-690a43172703" name="Default" comment="KunjalTandel : animation in 8.html and workplace changed">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/9.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/8.html" afterPath="$PROJECT_DIR$/8.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +21,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="7.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/7.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="57" lean-forward="false" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="8.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/8.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+            <state relative-caret-position="135">
+              <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="9.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/9.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -68,6 +88,7 @@
         <option value="$PROJECT_DIR$/5.html" />
         <option value="$PROJECT_DIR$/6.html" />
         <option value="$PROJECT_DIR$/7.html" />
+        <option value="$PROJECT_DIR$/9.html" />
         <option value="$PROJECT_DIR$/8.html" />
       </list>
     </option>
@@ -124,10 +145,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.8.html">
-    <configuration default="false" name="4.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/javascript/4.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.9.html">
     <configuration default="false" name="5.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/javascript/5.html">
       <method />
     </configuration>
@@ -138,6 +156,9 @@
       <method />
     </configuration>
     <configuration default="false" name="8.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/javascript/8.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="9.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/javascript/9.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -200,19 +221,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.4.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.5.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.6.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.7.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.8.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.5.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.6.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.7.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.8.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.9.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.8.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.7.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.6.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.5.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.4.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.9.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.8.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.7.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.6.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.5.html" />
       </list>
     </recent_temporary>
   </component>
@@ -343,11 +364,18 @@
       <option name="project" value="LOCAL" />
       <updated>1483679805306</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="KunjalTandel : animation in 8.html and workplace changed">
+      <created>1483689665621</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1483689665621</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27494000" />
+    <option name="totallyTimeSpent" value="30762000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -392,7 +420,8 @@
     <MESSAGE value="KunjalTandel : adding 7.html : contains file operation code." />
     <MESSAGE value="KunjalTandel : adding 7.html : contains file operation code with opening new html." />
     <MESSAGE value="workplace changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="workplace changes" />
+    <MESSAGE value="KunjalTandel : animation in 8.html and workplace changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="KunjalTandel : animation in 8.html and workplace changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -401,7 +430,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.txt" />
     <entry file="file://$PROJECT_DIR$/7.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -686,16 +714,24 @@
     <entry file="file://$PROJECT_DIR$/test.txt" />
     <entry file="file://$PROJECT_DIR$/7.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="405">
+          <caret line="27" column="57" lean-forward="false" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/8.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        <state relative-caret-position="135">
+          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
           <folding />
         </state>
       </provider>
