@@ -227,7 +227,7 @@
       <workItem from="1483510056604" duration="3684000" />
       <workItem from="1483517453155" duration="2075000" />
       <workItem from="1483593169904" duration="18514000" />
-      <workItem from="1483679200240" duration="589000" />
+      <workItem from="1483679200240" duration="615000" />
     </task>
     <task id="LOCAL-00001" summary="adding new html file 1.html">
       <created>1483510220864</created>
@@ -334,11 +334,18 @@
       <option name="project" value="LOCAL" />
       <updated>1483679782920</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="workplace changes">
+      <created>1483679805306</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1483679805306</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24862000" />
+    <option name="totallyTimeSpent" value="24888000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
@@ -382,7 +389,8 @@
     <MESSAGE value="KunjalTandel : adding 6.html : contains object example." />
     <MESSAGE value="KunjalTandel : adding 7.html : contains file operation code." />
     <MESSAGE value="KunjalTandel : adding 7.html : contains file operation code with opening new html." />
-    <option name="LAST_COMMIT_MESSAGE" value="KunjalTandel : adding 7.html : contains file operation code with opening new html." />
+    <MESSAGE value="workplace changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="workplace changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
