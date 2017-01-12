@@ -10,13 +10,14 @@
     function readSingleFile(evt) {
         //Retrieve the first (and only!) File from the FileList object
         var f = evt.target.files[0];
+        alert(f);
         if (f) {
             var r = new FileReader();
             r.onload = function(e) {
                 var contents = e.target.result;
                 /*var text = contents.replace(/</g,'&lt;');
                 var text1 = text.replace(/>/g,'&gt;');*/
-                document.write(contents);
+                //document.write(contents);
             }
             r.readAsText(f);
 

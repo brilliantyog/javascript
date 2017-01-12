@@ -1,0 +1,10 @@
+.div1{
+
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px;
+    border-color: black;
+    position: relative;
+}
