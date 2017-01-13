@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<select id="attributeNames" onchange="getUniqueValues.call(this)" name="attributeNames" size="5" multiple="multiple">
+    <option value="Apple"> Apple </option>
+    <option value="Mango"> Mango </option>
+    <option value="Orange"> Orange </option>
+    <option value="Banana"> Banana </option>
+</select>
+<script>
+function getUniqueValues(){
+for(var i = 0; i < this.options.length; i++){
+if(this.options[i].selected)
+alert(this.options[i].value);
+}
+}
+</script>
+</body>
+</html>

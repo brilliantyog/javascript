@@ -1,0 +1,51 @@
+Note : postback is not allowed.
+Its one page web application which allowed to search product which has following attributes.
+-> productName,productImage,color,size (height X Width), weight, Manufacturer,Price
+
+Step 1
+Git Part
+------------
+-> Create repository in github.com with name of "partsSearch"
+-> Create ReadMe file with dummy content.
+-> add .gitignore files which is appropriate to your project. X
+-> clone repository to local
+-> create develop branch from master branch
+
+
+Programming part
+-------------------
+->place textbox for search which will have autocomplete feature. It must start hitting web service after 3 character.
+->create product table and insert dummy data in that.
+->create API which will be called by autocomplete search textbox and return result in json format
+step 2
+Git Part
+-------------------
+->commit code in develop branch and push it to remote.
+->raise Pull request from develop to master
+->merge yourself.
+->create new branch "gridfeature" from develop branch
+->start workig in that
+programming part
+------------------
+->start working in "gridfeature" branch
+->place grid on page and show result which is return by autocomplete textbox.
+step 3
+----------
+Git part
+-----------
+->push code "gridfeature" to remote
+->raise pull request from "gridfeature" to develop
+->merge yourself
+programming part
+----------------------
+->start working in "gridfeature" branch
+->make grid column sortable. It should work based on datatype of column
+step 4
+------------
+Git part
+------------------
+->push code to remote
+->raise pull request from "gridfeature" to develop branch
+->merge it yourself.
+->now raise pull request from develop to master branch
+->merge it yourself

@@ -40,7 +40,7 @@
         }
 
         .listbox1 {
-            width: 43%;
+            width: 40%;
             height: 360px;
             margin-top: 20px;
             margin-left: 20px;
@@ -101,43 +101,39 @@
     </div>
     <div class="listbox">
         <div class="listbox1" style="float: left;">
+            <center>
+                <form>
+                    <div id="attributes" class="chkbox" style="float: left;">
 
-            <form>
-                <div id="attributes" class="chkbox" style="float: left;">
-
-                </div>
-            </form>
+                    </div>
+                </form>
+            </center>
             <div class="btns" style="float: right; margin-right: 10px;">
                 <center>
                     <button onclick="shiftright();" style="font-size: 12pt">&gt;</button>
-                    <br><br>
+                    <br><br><br>
                     <button onclick="shiftleft();" style="font-size: 12pt">&lt;</button>
-                    <br><br>
+                    <br><br><br>
                     <button onclick="shiftallright();" style="font-size: 12pt">&gt;&gt;</button>
-                    <br><br>
+                    <br><br><br>
                     <button onclick="shiftallleft();" style="font-size: 12pt">&lt;&lt;</button>
-                    <br><br>
+                    <br><br><br>
                 </center>
             </div>
         </div>
-        <div class="listbox1" id="selected_att" style=" float: right;margin-right: 20px;">
-            <form>
-                <div class="chkbox" id="selected_att1" style="float: left;" >
+        <center>
+            <div class="listbox1" id="selected_att" style=" float: right;margin-right: 20px;">
+                <form>
+                    <div class="chkbox" id="selected_att1" style="height: 280px;">
 
-                </div>
-            </form>
-            <div class="btns" style="float: right; margin-right: 5px;">
-                <center>
-                    <button onclick="goUp();" style="font-size: 12pt">/\</button>
-                    <br><br>
-                    <button onclick="goDown();" style="font-size: 12pt">\/</button>
-                    <br><br>
-                </center>
+                    </div>
+                    <br>
+                </form>
             </div>
-        </div>
+        </center>
     </div>
 </div>
-<div class="disp" id="disp1" style="overflow: auto;">
+<div class="disp" id="disp1">
 
 </div>
 <script type="text/javascript">
@@ -155,31 +151,33 @@
     });
 
     function shiftleft() {
-        var build = document.forms[1];
-        var put = "";
-        for (var i = 0; i < build.length; i++) {
-            if (build[i].checked) {
-            } else {
-                put += "<input style='margin-left: 20px;' type = 'checkbox' value=" + build[i].value + ">" + build[i].value + "<br><br>";
+        var build = document.getElementById("fields");
+        var put = "<select multiple id='sFields' style='height: 80%;'>\n";
+        for (var i = 0; i < build.options.length; i++) {
+            if (!build.options[i].selected) {
+                put += "<option value="+build.options[i].value+">"+build.options[i].value+"</option>\n";
             }
         }
+        put += "</select>\n";
         document.getElementById('selected_att1').innerHTML = "";
         $('#selected_att1').append(put);
         displaydata();
     }
     function shiftallleft() {
+        var build = "<select multiple id='sFields' style='height: 80%;'></select>"
         document.getElementById('selected_att1').innerHTML = "";
         displaydata();
     }
     function shiftright() {
-        var build = document.forms[0];
-        var put = "";
-        for (var i = 0; i < build.length; i++) {
-            if (build[i].checked) {
-                put += "<input type = 'checkbox' style='margin-left: 20px;' value=" + build[i].value + ">" + build[i].value + "<br><br>";
+        var build = document.getElementById("fields");
+        var put = "<select multiple id='sFields' style='height: 80%;'>\n";
+        for (var i = 0; i < build.options.length; i++) {
+            if (build.options[i].selected) {
+                put += "<option value="+build.options[i].value+">"+build.options[i].value+"</option>\n";
             }
         }
-        document.getElementById("selected_att1").innerHTML = "";
+        put += "</select>\n";
+        document.getElementById('selected_att1').innerHTML = "";
         $('#selected_att1').append(put);
         displaydata();
     }
@@ -192,86 +190,58 @@
         var value = document.getElementById('zip_code_selector').value;
         document.getElementById('country_code_txt').value = value;
         $.get('locations.csv', function (data) {
-            var build = "";
+            var build = "<select multiple class='chkbox' id='fields' style='height: 80%;'>";
             locationfile = data.split("\n");
             var att = locationfile[0].split(",");
             for (var i = 0; i < att.length; i++) {
-                build += "<input type='checkbox' style='margin-left: 20px;' name = 'attributechk[]' value=" + att[i] + ">" + att[i] + "<br><br>";
+                build += "<option value="+att[i] + ">"+att[i] +"</option>";
             }
-            document.getElementById("attributes").innerHTML = "";
+            build += "</select>";
             $('#attributes').append(build);
         });
     }
     function displaydata() {
         var chk = document.getElementById('country_code_txt').value;
-        var build1 = document.forms[1];
-        $.get('locations.csv', function (data) {
-            var build = '<table border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse" width="100%">\n';
-            var id1 = [];
-            locationfile = data.split("\n");
-            var att1 = locationfile[0].split(",");
-            for (var i = 0; i < build1.length; i++) {
-                for (var j = 0; j < att1.length; j++) {
-                    if (build1[i].value == att1[j]) {
-                        id1[j] = j;
-                    }
-                }
-
-            }
-
-            build += "<tr>\n";
-            for (var i = 0; i < build1.length; i++) {
-                build += "<td>" + build1[i].value + "</td>\n";
-            }
-            build += "</tr>\n";
-            locationfile.forEach(function getvalues(thisRow) {
-                var att = thisRow.split(",");
-                if (thisRow.search(chk) != -1) {
-                    build += "<tr>\n";
-                    for (var i = 0; i < att.length; i++) {
-                        if (id1[i] == i) {
-                            build += "<td>" + att[i] + "</td>\n";
+        var build1 = document.getElementById("sFields");
+        if(build1.options.length>0) {
+            $.get('locations.csv', function (data) {
+                var build = '<table border="1" cellpadding="2" cellspacing="0" style="border-collapse: collapse" width="100%">\n';
+                var id1 = [];
+                locationfile = data.split("\n");
+                var att1 = locationfile[0].split(",");
+                for (var i = 0; i < build1.options.length; i++) {
+                    for (var j = 0; j < att1.length; j++) {
+                        if (build1.options[i].value == att1[j]) {
+                            id1[j] = j;
                         }
                     }
-                    build += "</tr>\n";
+
                 }
-            })
-            build += "</table>";
-            document.getElementById('disp1').innerHTML = "";
-            $('#disp1').append(build);
-        });
-    }
-    function goUp() {
-        var a = document.forms[1];
-        var b = "";
-        for (var i = 0; i < a.length; i++) {
-            if (a[i].checked) {
-                b += a[i].value + "<input type='checkbox' value=" + a[i].value + " ><br><br>";
-            }
+
+                build += "<tr>\n";
+                for (var i = 0; i < build1.length; i++) {
+                    build += "<td>" + build1.options[i].value + "</td>\n";
+                }
+                build += "</tr>\n";
+                locationfile.forEach(function getvalues(thisRow) {
+                    var att = thisRow.split(",");
+                    if (thisRow.search(chk) != -1) {
+                        build += "<tr>\n";
+                        for (var i = 0; i < att.length; i++) {
+                            if (id1[i] == i) {
+                                build += "<td>" + att[i] + "</td>\n";
+                            }
+                        }
+                        build += "</tr>\n";
+                    }
+                })
+                build += "</table>";
+                document.getElementById('disp1').innerHTML = "";
+                $('#disp1').append(build);
+            });
+        }else{
+
         }
-        for (var i = 0; i < a.length; i++) {
-            if (!a[i].checked) {
-                b += a[i].value + "<input type='checkbox' value=" + a[i].value + "><br><br>";
-            }
-        }
-        document.getElementById('selected_att1').innerHTML = "";
-        $('#selected_att1').append(b);
-    }
-    function goDown() {
-        var a = document.forms[1];
-        var b = "";
-        for (var i = 0; i < a.length; i++) {
-            if (!a[i].checked) {
-                b += a[i].value + "<input type='checkbox' value=" + a[i].value + "><br><br>";
-            }
-        }
-        for (var i = 0; i < a.length; i++) {
-            if (a[i].checked) {
-                b += a[i].value + "<input type='checkbox' value=" + a[i].value + "><br><br>";
-            }
-        }
-        document.getElementById('selected_att1').innerHTML = "";
-        $('#selected_att1').append(b);
     }
 </script>
 </body>
